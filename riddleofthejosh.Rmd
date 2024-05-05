@@ -1,5 +1,10 @@
 ---
 title: "Riddle of the Josh"
+knit: (function(input_file, encoding) {
+    out_dir <- 'docs';
+    rmarkdown::render(input_file,
+      encoding=encoding,
+      output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 author: "Parker Sheppard"
 date: "2024-05-05"
 output: html_document
